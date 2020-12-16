@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: frasesapp
+    hostname: frasesapp
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: frasesapp
+      POSTGRES_DB: frasesapp
+    ports:
+      - 5432:5432

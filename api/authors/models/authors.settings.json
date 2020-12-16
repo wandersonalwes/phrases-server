@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "authors"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "minLength": 2
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "phrases": {
+      "via": "author",
+      "collection": "phrases"
+    }
+  }
+}

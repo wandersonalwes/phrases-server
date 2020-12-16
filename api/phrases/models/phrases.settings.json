@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phrases",
+  "info": {
+    "name": "phrases",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "author": {
+      "model": "authors",
+      "via": "phrases"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "phrases",
+      "dominant": true
+    },
+    "phrase": {
+      "type": "text"
+    }
+  }
+}
