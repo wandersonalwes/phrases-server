@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/phrase-day",
+      "handler": "phrase-day.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/phrase-day",
+      "handler": "phrase-day.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/phrase-day",
+      "handler": "phrase-day.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

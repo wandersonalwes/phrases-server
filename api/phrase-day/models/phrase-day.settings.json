@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "phrase_days",
+  "info": {
+    "name": "phrase day"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "phrase": {
+      "model": "phrases"
+    }
+  }
+}
